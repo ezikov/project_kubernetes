@@ -24,7 +24,7 @@ metadata:
     name: voting-app-deploy
     app: demo-voting-app
 spec:
-  replicas: 1
+  replicas: 10
   selector:
       matchLabels:
         name: voting-app-pod
@@ -38,7 +38,7 @@ spec:
     spec: 
         containers:
              - name: voting-app
-               image: ezikov/vote:1.0
+               image: ezikov/vote:2.0
                ports:
                   - containerPort: 80
 
