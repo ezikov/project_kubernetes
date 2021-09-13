@@ -20,7 +20,7 @@ spec:
     spec: 
         containers:
              - name: voting-app
-               image: dockersamples/examplevotingapp_vote
+               image: ezikov/vote:2.0
                ports:
                   - containerPort: 80
     
